@@ -9,7 +9,7 @@ const db = new sqlite3.Database("./american-dad.db", (err) => {
   }
 });
 
-const sql = fs.readFileSync("setup.sql", "utf8");
+const sql = fs.readFileSync("seed/setup.sql", "utf8");
 
 db.exec(sql, (err) => {
   if (err) {
