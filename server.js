@@ -23,6 +23,22 @@ fastify.get("/characters", async (request, reply) => {
   });
 });
 
+fastify.get("/characters/:id", async (request, reply) => {
+  const { id } = request.params;
+
+  return new Promise((resolve, reject) => {
+    db.get("SELECT * FROM characters WHERE id = ?", [id], (err, row) => {
+      if (err) {
+        reject(err);
+      } else if (row) {
+        resolve(row);
+      } else {
+        reply.status(404).send({ message: "Character not found" });
+      }
+    });
+  });
+});
+
 fastify.listen({ port: 3000 }, () => {
   console.log("Server running at http://localhost:3000");
 });
