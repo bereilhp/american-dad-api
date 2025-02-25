@@ -80,3 +80,24 @@ npm start
 ```
 
 After starting the server, the API will be available at http://localhost:3000.
+
+## Performance
+
+### Sqlite3
+
+To assess the performance of the /characters endpoint, load testing was conducted using Plow, a tool for generating high-volume HTTP requests. Below is the command used for testing:
+
+```
+plow -c 10 -d 10s http://localhost:3000/characters
+```
+
+### Results
+
+The test was run with 10 concurrent connections for a duration of 10 seconds, sending requests to the /characters endpoint. Below are the key performance metrics:
+
+- Total Requests: 113,146
+- Requests Per Second (RPS): 11,314.52
+- Read Throughput: 4.974 MB/s
+- Write Throughput: 0.734 MB/s
+- Mean: 881 µs
+- Min: 397 µs
