@@ -1,0 +1,23 @@
+{
+  "name": "american-dad-api",
+  "version": "1.0.0",
+  "description": "American Dad API is a RESTful API built with Fastify and SQLite3, inspired by the Rick and Morty API. It provides data on characters, episodes and more from the American Dad universe.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bereilhp/american-dad-api.git"
+  },
+  "author": "PB",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bereilhp/american-dad-api/issues"
+  },
+  "homepage": "https://github.com/bereilhp/american-dad-api#readme",
+  "dependencies": {
+    "fastify": "^5.2.1",
+    "sqlite3": "^5.1.7"
+  }
+}
