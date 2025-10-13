@@ -14,7 +14,6 @@ INSERT INTO characters (name, species) VALUES
 ('Steve Smith', 'Human'),
 ('Hayley Smith', 'Human'),
 ('Klaus', 'Goldfish'),
-
 ('Avery Bullock', 'Human'),
 ('Jeff Fischer', 'Human'),
 ('Principal Lewis', 'Human'),
@@ -64,8 +63,6 @@ INSERT INTO characters (name, species) VALUES
 ('Cassandra Dawson', 'Human'),
 ('Janet Dawson', 'Human'),
 ('Liberty Belle Corbin-Bates', 'Human'),
-
--- Roger alter egos (all are Roger-in-disguise)
 ('Ricky Spanish', 'Alien'),
 ('Jeannie Gold', 'Alien'),
 ('The Legman', 'Alien'),
@@ -91,4 +88,3 @@ INSERT INTO characters (name, species) VALUES
 ('Buck Wetnap', 'Alien'),
 ('Billy Jesusworth', 'Alien'),
 ('Ace Crouton', 'Alien');
-

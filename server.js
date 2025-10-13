@@ -1,5 +1,7 @@
 const fastify = require("fastify")({
-  logger: true,
+  logger: {
+    level: "info",
+  }
 });
 
 const charactersRoutes = require("./routes/characters");
