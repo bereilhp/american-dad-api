@@ -19,6 +19,6 @@
   "homepage": "https://github.com/bereilhp/american-dad-api#readme",
   "dependencies": {
     "fastify": "^5.2.1",
-    "sqlite3": "^5.1.7"
+    "sqlite3": "^6.0.1"
   }
 }
